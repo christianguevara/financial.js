@@ -1,9 +1,9 @@
 financial.js
 ============
 
-Implementation of Microsoft Excel financial functions in JavaScript
+Implementation of Microsoft Excel financial functions in JavaScript.
 
-Inspired and adapted from [Excel Financial functions for .NET](http://archive.msdn.microsoft.com/FinancialFunctions), as licensed under the [Microsoft Public License](https://github.com/mfreilich/financial.js/blob/master/Ms-PL-License)
+Inspired and adapted from [Excel Financial functions for .NET](http://archive.msdn.microsoft.com/FinancialFunctions), as licensed under the [Microsoft Public License](https://github.com/mfreilich/financial.js/raw/master/Ms-PL-License).
 
 
 License
