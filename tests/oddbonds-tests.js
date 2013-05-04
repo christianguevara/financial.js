@@ -17,7 +17,7 @@ describe("test ODDFPRICE", function() {
         var frequency     = 2;
         var basis         = 1;
 
-        var answer        = 113.5977;
+        var answer        = 113.59771747407883;
 
         OddBonds.ODDFPRICE(settlement, maturity, issue, firstCoupon, percentCoupon, percentYld, redemption, frequency, basis).should.equal(answer);
     });
@@ -38,7 +38,7 @@ describe("test ODDFYIELD", function() {
         var frequency     = 2;
         var basis         = 0;
 
-        var answer        = .077245542;
+        var answer        = 0.07724554159781721;
 
         OddBonds.ODDFYIELD(settlement, maturity, issue, firstCoupon, percentCoupon, price, redemption, frequency, basis).should.equal(answer);
     });
@@ -58,7 +58,7 @@ describe("test ODDLPRICE", function() {
         var frequency     = 2;
         var basis         = 0;
 
-        var answer        = 99.87829;
+        var answer        = 99.87828601472134;
 
         OddBonds.ODDLPRICE(settlement, maturity, lastInterest, percentCoupon, percentYld, redemption, frequency, basis).should.equal(answer);
     });
@@ -78,7 +78,7 @@ describe("test ODDLYIELD", function() {
         var frequency     = 2;
         var basis         = 0;
 
-        var answer = .045192;
+        var answer = 0.04519223562916916;
 
         OddBonds.ODDLYIELD(settlement, maturity, lastInterest, percentCoupon, price, redemption, frequency, basis).should.equal(answer);
     });

@@ -22,7 +22,7 @@ describe("test DOLLARFR", function() {
 describe("test EFFECT", function() {
 
     it("", function() {
-        Misc.EFFECT(.0525, 4).should.equal(.053543);
+        Misc.EFFECT(.0525, 4).should.equal(0.05354266737075841);
     });
 
 });
@@ -30,7 +30,7 @@ describe("test EFFECT", function() {
 describe("test NOMINAL", function() {
 
     it("", function() {
-        Misc.NOMINAL(.053543, 4).should.equal(.0525);
+        Misc.NOMINAL(.053543, 4).should.equal(0.052500319868356016);
     });
 
 });

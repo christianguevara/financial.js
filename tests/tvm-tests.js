@@ -30,7 +30,7 @@ describe("test PMT", function() {
 describe("test NPER", function() {
 
     it("", function() {
-        Tvm.NPER(.12/12, -100, -1000, 10000, 1).should.equal(59.67387);
+        Tvm.NPER(.12/12, -100, -1000, 10000, 1).should.equal(59.67386567429457);
     });
 
 });
@@ -46,7 +46,7 @@ describe("test RATE", function() {
 describe("test FVSCHEDULE", function() {
 
     it("", function() {
-        Tvm.FVSCHEDULE(1, [.09, .11, .1]).should.equal(1.33089);
+        Tvm.FVSCHEDULE(1, [.09, .11, .1]).should.equal(1.3308900000000004);
     });
 
 });

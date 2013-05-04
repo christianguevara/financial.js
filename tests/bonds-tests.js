@@ -299,7 +299,7 @@ describe("test ACCRINT", function() {
 describe("test ACCRINTM", function() {
 
     it("", function() {
-        Bonds.ACCRINTM("4/1/2008", "6/15/2008", .1, 1000, 3).should.equal(20.54795);
+        Bonds.ACCRINTM("4/1/2008", "6/15/2008", .1, 1000, 3).should.equal(20.54794520547945);
     });
 
 });
@@ -307,7 +307,7 @@ describe("test ACCRINTM", function() {
 describe("test PRICE", function() {
 
     it("", function() {
-        Bonds.PRICE("2/15/2008", "11/15/2017", .0575, .0650, 100, 2, 0).should.equal(94.63436);
+        Bonds.PRICE("2/15/2008", "11/15/2017", .0575, .0650, 100, 2, 0).should.equal(94.63436162132213);
     });
 
 });
@@ -315,7 +315,7 @@ describe("test PRICE", function() {
 describe("test PRICEMAT", function() {
 
     it("", function() {
-        Bonds.PRICEMAT("2/15/2008", "4/13/2008", "11/11/2007", .061, .061, 0).should.equal(99.98449888);
+        Bonds.PRICEMAT("2/15/2008", "4/13/2008", "11/11/2007", .061, .061, 0).should.equal(99.98449887555694);
     });
 
 });
@@ -323,7 +323,7 @@ describe("test PRICEMAT", function() {
 describe("test YIELDMAT", function() {
 
     it("", function() {
-        Bonds.YIELDMAT("3/15/2008", "11/3/2008", "11/8/2007", .0625, 100.0123, 0).should.equal(0.060954);
+        Bonds.YIELDMAT("3/15/2008", "11/3/2008", "11/8/2007", .0625, 100.0123, 0).should.equal(0.06095433369153867);
     });
 
 });
@@ -339,7 +339,7 @@ describe("test INTRATE", function() {
 describe("test RECEIVED", function() {
 
     it("", function() {
-        Bonds.RECEIVED("2/15/2008", "5/15/2008", 1000000, .0575, 2).should.equal(1014584.654);
+        Bonds.RECEIVED("2/15/2008", "5/15/2008", 1000000, .0575, 2).should.equal(1014584.6544071021);
     });
 
 });
@@ -347,7 +347,7 @@ describe("test RECEIVED", function() {
 describe("test DISC", function() {
 
     it("", function() {
-        Bonds.DISC("1/25/2007", "6/15/2007", 97.975, 100, 1).should.equal(0.052420213);
+        Bonds.DISC("1/25/2007", "6/15/2007", 97.975, 100, 1).should.equal(0.05242021276595771);
     });
 
 });
@@ -355,7 +355,7 @@ describe("test DISC", function() {
 describe("test PRICEDISC", function() {
 
     it("", function() {
-        Bonds.PRICEDISC("2/16/2008", "3/1/2008", .0525, 100, 2).should.equal(99.79583);
+        Bonds.PRICEDISC("2/16/2008", "3/1/2008", .0525, 100, 2).should.equal(99.79583333333333);
     });
 
 });
@@ -363,7 +363,7 @@ describe("test PRICEDISC", function() {
 describe("test YIELDDISC", function() {
 
     it("", function() {
-        Bonds.YIELDDISC("2/16/2008", "3/1/2008", 99.795, 100, 2).should.equal(0.052823);
+        Bonds.YIELDDISC("2/16/2008", "3/1/2008", 99.795, 100, 2).should.equal(0.05282257198685834);
     });
 
 });
@@ -371,7 +371,7 @@ describe("test YIELDDISC", function() {
 describe("test DURATION", function() {
 
     it("", function() {
-        Bonds.DURATION("1/1/2008", "1/1/2016", .08, .09, 2, 1).should.equal(5.993775);
+        Bonds.DURATION("1/1/2008", "1/1/2016", .08, .09, 2, 1).should.equal(5.993774955545186);
     });
 
 });
@@ -379,7 +379,7 @@ describe("test DURATION", function() {
 describe("test MDURATION", function() {
 
     it("", function() {
-        Bonds.MDURATION("1/1/2008", "1/1/2016", .08, .09, 2, 1).should.equal(5.73567);
+        Bonds.MDURATION("1/1/2008", "1/1/2016", .08, .09, 2, 1).should.equal(5.735669813918839);
     });
 
 });
