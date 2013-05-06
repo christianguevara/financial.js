@@ -6,7 +6,7 @@ var Loan = require("../lib/loan.js");
 describe("test IPMT", function() {
 
     it("", function() {
-        Loan.IPMT(.1/12, 1*3, 3, 8000, 0, 0).should.equal(-22.41);
+        Loan.IPMT(.1/12, 1*3, 3, 8000, 0, 0).should.equal(-22.406893015923927);
     });
 
 });
@@ -14,7 +14,7 @@ describe("test IPMT", function() {
 describe("test PPMT", function() {
 
     it("", function() {
-        Loan.PPMT(.08, 10, 10, 200000, 0, 0).should.equal(-27598.05);
+        Loan.PPMT(.08, 10, 10, 200000, 0, 0).should.equal(-27598.053462421354);
     });
 
 });
@@ -22,7 +22,7 @@ describe("test PPMT", function() {
 describe("test CUMIPMT", function() {
 
     it("", function() {
-        Loan.CUMIPMT(.09/12, 30*12, 125000, 13, 24, 0).should.equal(-11135.23);
+        Loan.CUMIPMT(.09/12, 30*12, 125000, 13, 24, 0).should.equal(-11135.232130750845);
     });
 
 });
@@ -30,7 +30,7 @@ describe("test CUMIPMT", function() {
 describe("test CUMPRINC", function() {
 
     it("", function() {
-        Loan.CUMPRINC(.09/12, 30*12, 125000, 13, 24, 0).should.equal(-934.1071);
+        Loan.CUMPRINC(.09/12, 30*12, 125000, 13, 24, 0).should.equal(-934.1071234208695);
     });
 
 });
