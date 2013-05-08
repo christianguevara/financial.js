@@ -5,16 +5,44 @@ var Irr = require("../lib/irr.js");
 
 describe("test IRR", function() {
 
+    var t1 = [-70000, 12000, 15000, 18000, 21000];
+    var t2 = [-70000, 12000, 15000, 18000, 21000, 26000];
+    var t3 = [-70000, 12000, 15000];
+
     it("", function() {
-        Irr.IRR([-70000, 12000, 15000, 18000, 21000, 26000], .1).should.equal(0.08663094803653171);
+        Irr.IRR(t1).should.equal(-0.021244848273126928);
+    });
+
+    it("", function() {
+        Irr.IRR(t2).should.equal(0.08663094803653171);
+    });
+
+    it("", function() {
+        Irr.IRR(t3, -.1).should.equal(-0.44350694133450463);
     });
 
 });
 
 describe("test NPV", function() {
 
+    var rate = .08;
+    var initial = -40000;
+    var a4 = 8000;
+    var a5 = 9200;
+    var a6 = 10000;
+    var a7 = 12000;
+    var a8 = 14500;
+
     it("", function() {
         Irr.NPV(.1, [-10000, 3000, 4200, 6800]).should.equal(1188.4434123352216);
+    });
+
+    it("", function() {
+        Irr.NPV(rate, [a4,a5,a6,a7,a8]).should.equal(41922.06155493236);
+    });
+
+    it("", function() {
+        Irr.NPV(rate, [a4,a5,a6,a7,a8,-9000]).should.equal(36250.534912984425);
     });
 
 });
