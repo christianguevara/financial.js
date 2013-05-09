@@ -111,7 +111,6 @@ describe("test VDB", function() {
         Depreciation.VDB(a2, a3, a4*12, 6, 18, 1.5).should.equal(311.8089366582341);
     });
 
-    // MAX CALL STACK EXCEEDED - RECURSION issue!
     it("", function() {
         Depreciation.VDB(a2, a3, a4, 0, 0.875, 1.5).should.equal(315);
     });

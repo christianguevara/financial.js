@@ -49,8 +49,25 @@ describe("test NPV", function() {
 
 describe("test MIRR", function() {
 
+    var a2 = -120000;
+    var a3 = 39000;
+    var a4 = 30000;
+    var a5 = 21000;
+    var a6 = 37000;
+    var a7 = 46000;
+    var a8 = .1;
+    var a9 = .12;
+
     it("", function() {
-        Irr.MIRR([-120000, 39000, 30000, 21000, 37000, 46000], .1, .12).should.equal(0.1260941303659051);
+        Irr.MIRR([a2,a3,a4,a5,a6,a7], a8, a9).should.equal(0.1260941303659051);
+    });
+
+    it("", function() {
+        Irr.MIRR([a2,a3,a4,a5], a8, a9).should.equal(-0.048044655249980806);
+    });
+
+    it("", function() {
+        Irr.MIRR([a2,a3,a4,a5,a6,a7], a8, .14).should.equal(0.13475911082831482);
     });
 
 });
