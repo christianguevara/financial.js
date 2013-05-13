@@ -194,101 +194,101 @@ describe("test ACCRINT", function() {
     // // **********************************
     // // Correct but simply rounding errors
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 1, false).should.equal(184.34065934066);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 1, false).should.equal(184.34065934065933);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 1, false).should.equal(183.33333333333334);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 1, false).should.equal(183.33333333333331);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 1, false).should.equal(184.34065934066);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 1, false).should.equal(184.34065934065933);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, true).should.equal(15.38737929486666);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, true).should.equal(15.387379294857407);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, true).should.equal(15.616438356164384);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, true).should.equal(15.616438356164386);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, false).should.equal(15.38737929486666);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 1, false).should.equal(15.387379294857407);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 1, false).should.equal(-84.15300546448);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 1, false).should.equal(-84.15300546448088);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, false).should.equal(-135.16483516484);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, false).should.equal(-135.16483516483518);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, false).should.equal(-136.6666666666667);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, false).should.equal(-136.66666666666666);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, false).should.equal(15.616438356164384);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 1, 3, false).should.equal(15.616438356164386);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, false).should.equal(-84.38356164384);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, false).should.equal(-84.3835616438356);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, false)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, false).should.equal(-134.79452054795);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, false)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, false).should.equal(-134.7945205479452);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, true).should.equal(14.83516483516);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 1, true).should.equal(14.835164835164836);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 2, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 2, true).should.equal(14.444444444444445);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 2, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 2, true).should.equal(14.444444444444448);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, true).should.equal(13.333333333333332);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 2, true).should.equal(13.33333333333334);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, true).should.equal(15.616438356164384);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 2, 3, true).should.equal(15.616438356164391);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 0, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 0, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 0, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 0, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 0, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 0, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 0, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 0, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 0, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 0, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 0, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 0, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 3, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 3, true).should.equal(183.83561643835617);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 3, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 3, true).should.equal(183.83561643835614);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 4, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 4, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 4, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 1, 4, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 4, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 4, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 4, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 2, 4, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 4, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 4, true).should.equal(183.88888888888889);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 4, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '3/30/2012', '12/4/2013', 0.1, 1000, 4, 4, true).should.equal(183.8888888888889);
+    });
 
-    // it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, true)", function() {
-    //     Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, true).should.equal(15.20547945);
-    // });
+    it("should correctly calculate ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, true)", function() {
+        Bonds.ACCRINT('2/2/2012', '12/4/2013', '3/30/2012', 0.1, 1000, 4, 3, true).should.equal(15.205479452054792);
+    });
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
     //
