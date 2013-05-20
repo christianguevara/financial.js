@@ -2,11 +2,20 @@
     "author": "Max Freilich <maxfreilich@gmail.com>",
     "name": "financial",
     "description": "Implementation of Microsoft Excel financial functions in JavaScript",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "repository": {
         "type": "git",
         "url": "https://github.com/mfreilich/financial.js.git"
     },
+    "keywords": [
+        "financial",
+        "excel",
+        "spreadsheet",
+        "calc",
+        "depreciation",
+        "interest",
+        "bonds"
+    ],
     "main": "financial.js",
     "dependencies": {
         "moment": "*"
