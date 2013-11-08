@@ -1,17 +1,29 @@
-var moment        = require('moment');
-var Common        = require("./lib/common.js");
-var DayCountBasis = require("./lib/daycountbasis.js");
-var Bonds         = require("./lib/bonds.js");
-var Depreciation  = require("./lib/depreciation.js");
-var Irr           = require("./lib/irr.js");
-var Loan          = require("./lib/loan.js");
-var Misc          = require("./lib/misc.js");
-var TBill         = require("./lib/tbill.js");
-var Tvm           = require("./lib/tvm.js");
-var OddBonds      = require("./lib/oddbonds.js");
 
+(function (definition) {
+    if (typeof exports === "object") {
+        var Common        = require("./lib/common.js");
+        var DayCountBasis = require("./lib/daycountbasis.js");
+        var Bonds         = require("./lib/bonds.js");
+        var Depreciation  = require("./lib/depreciation.js");
+        var Irr           = require("./lib/irr.js");
+        var Loan          = require("./lib/loan.js");
+        var Misc          = require("./lib/misc.js");
+        var TBill         = require("./lib/tbill.js");
+        var Tvm           = require("./lib/tvm.js");
+        var OddBonds      = require("./lib/oddbonds.js");
 
-var Financial = ( function() {
+        module.exports = definition(moment, Common, DayCount);
+    } else if (typeof define === "function" && define.amd) {
+
+        requirejs.config({
+            baseUrl: 'lib'
+        });
+
+        define(['common', 'daycountbasis', 'bonds', 'depreciation',
+                'irr', 'loan', 'misc', 'tbill', 'tvm',
+                'oddbonds'], definition);
+    }
+})( function(Common, DayCountBasis, Bonds, Depreciation, Irr, Loan, Misc, TBill, Tvm, OddBonds) {
 
     var scope = this.Financial = {};
 
@@ -79,7 +91,7 @@ var Financial = ( function() {
     scope.DISC = function(settlement, maturity, pr, redemption, basis) {
         return Bonds.DISC(settlement, maturity, pr, redemption, basis);
     };
-        
+
     scope.PRICEDISC = function(settlement, maturity, discount, redemption, basis) {
         return Bonds.PRICEDISC(settlement, maturity, discount, redemption, basis);
     };
@@ -256,6 +268,4 @@ var Financial = ( function() {
 
     return scope;
 
-})();
-
-module.exports = Financial;
+});
