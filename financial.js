@@ -12,7 +12,7 @@
         var Tvm           = require("./lib/tvm.js");
         var OddBonds      = require("./lib/oddbonds.js");
 
-        module.exports = definition(moment, Common, DayCount);
+      module.exports = definition(Common, DayCountBasis, Bonds, Depreciation, Irr, Loan, Misc, TBill, Tvm, OddBonds);
     } else if (typeof define === "function" && define.amd) {
 
         requirejs.config({

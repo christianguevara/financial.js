@@ -2,7 +2,7 @@
     "author": "Max Freilich <maxfreilich@gmail.com>",
     "name": "financial",
     "description": "Implementation of Microsoft Excel financial functions in JavaScript",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "repository": {
         "type": "git",
         "url": "https://github.com/mfreilich/financial.js.git"
