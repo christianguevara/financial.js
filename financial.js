@@ -45,8 +45,8 @@
         return DayCountBasis.COUPNUM(settlement, maturity, frequency, basis);
     };
 
-    scope.COUPDAYSBS = function(settlement, maturity, frequency, basis) {
-        return DayCountBasis.COUPDAYSBS(settlement, maturity, frequency, basis);
+    scope.COUPDAYBS = function(settlement, maturity, frequency, basis) {
+        return DayCountBasis.COUPDAYBS(settlement, maturity, frequency, basis);
     };
 
     scope.COUPDAYSNC = function(settlement, maturity, frequency, basis) {

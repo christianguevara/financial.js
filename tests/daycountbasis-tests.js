@@ -35,10 +35,10 @@ describe("test COUPNUM", function() {
 
 });
 
-describe("test COUPDAYSBS", function() {
+describe("test COUPDAYBS", function() {
 
     it("", function() {
-        DayCountBasis.COUPDAYSBS('1/25/2007', '11/15/2008', 2, 1).should.equal(71);
+        DayCountBasis.COUPDAYBS('1/25/2007', '11/15/2008', 2, 1).should.equal(71);
     });
 
 });
